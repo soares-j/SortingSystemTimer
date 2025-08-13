@@ -31,6 +31,7 @@ public class sorting {
 
     // Bogo Sort
     // Algoritmo ineficiente que embaralha a lista até que ela esteja ordenada.
+    // Comente se quer desativar o bogo sort
     // public static void bogoSort(List<String> list) {
     //     Random rand = new Random();
     //     while (!isSorted(list)) {
@@ -121,8 +122,8 @@ public class sorting {
         System.out.println("Tempo de execução em nanosegundos: " + elapsedNanoseconds);
         System.out.println("Tempo de execução em ticks: " + elapsedTicks);
         System.out.printf("Tempo de execução em segundos: %.2f%n", elapsedSeconds);
-        System.out.println("Ordenado: " + isSorted(list));
-        // System.out.println("Lista ordenada: " + list);
+        System.out.println("Ordenado: " + isSorted(list)); // escreve se a lista está ordenada (true ou false)
+        // System.out.println("Lista ordenada: " + list); // escreve a lista ordenada
     }
 
     public static void main(String[] args) {
@@ -144,7 +145,7 @@ public class sorting {
         }
 
         // Bogo Sort (pode demorar muito!)
-        // runAndTimeSort("Bogo Sort", shuffledList, sorting::bogoSort);
+        // runAndTimeSort("Bogo Sort", shuffledList, sorting::bogoSort);  // comente se quer desativar o bogo sort
 
         // Bubble Sort
         runAndTimeSort("Bubble Sort", shuffledList, sorting::bubbleSort);
