@@ -135,8 +135,10 @@ public class Sorting {
         int tipo = scanner.nextInt();
 
         System.out.print("Digite a quantidade de elementos: ");
+
         int quantidade = scanner.nextInt();
 
+        System.out.println("\nExecutando tarefa...");
         List<String> shuffledList;
         if (tipo == 1) {
             shuffledList = generateShuffledNames(quantidade);
