@@ -123,7 +123,7 @@ public class Sorting {
         System.out.println("Tempo de execução em ticks: " + elapsedTicks);
         System.out.printf("Tempo de execução em segundos: %.2f%n", elapsedSeconds);
         System.out.println("Ordenado: " + isSorted(list)); // escreve se a lista está ordenada (true ou false)
-        // System.out.println("Lista ordenada: " + list); // escreve a lista ordenada
+        System.out.println("Lista ordenada: " + list); //.subList(0, Math.min(50, list.size()))); // escreve a lista ordenada com no máximo 50 elementos
     }
 
     public static void main(String[] args) {
