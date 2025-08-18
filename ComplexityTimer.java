@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.function.Consumer;
 
-public class teste {
+public class ComplexityTimer {
 
     // Gera uma lista embaralhada de nomes aleatórios (caso médio)
     // Complexidade: O(n) para gerar e embaralhar
@@ -117,4 +117,5 @@ public class teste {
 
         scanner.close();
     }
+
 }
